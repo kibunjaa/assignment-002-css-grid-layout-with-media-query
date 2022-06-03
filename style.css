@@ -1,0 +1,60 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "student breaking css"
+    "boy politics politics"
+    "boy technology technology"
+    "boy locals locals"
+    "boy opinion opinion"
+    "boy sports sports"
+    ;
+    grid-gap: 5px;
+    border-top: 2px solid black;
+}
+#StudentLearnsHTML{
+    grid-area: student;
+    border: 2px solid black;
+    height: 2cm;
+}
+#BREAKING:Puppies are Addorable{
+    grid-area: breaking;
+    border: 2px solid black;
+    height: 2cm;
+}
+img{
+    width:300px;
+    height:200px;
+}
+#CSSIsApparentlyAThing{
+    grid-area: css;
+    border: 2px solid black;
+    height: 2cm;
+}
+#BoyLikeTurtle{
+    grid-area: boy;
+    border: 2px solid black;
+    height: 2cm;
+}
+#Politics{
+    background-color: rgb(201, 195, 110);
+    grid-area: politics;
+}
+#Technology{
+    background-color: lightskyblue;
+     grid-area: technology;
+}
+#Locals{
+    background-color: dodgerblue;
+    grid-area: locals;
+}
+#Opinion{
+    background-color:lightgreen;
+    grid-area: opinion;
+}
+#Sports{
+    background-color:#7a09af;
+    grid-area: sports;
+}
