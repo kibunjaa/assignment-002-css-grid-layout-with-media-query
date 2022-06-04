@@ -1,8 +1,8 @@
 .container{
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    height: repeat(50vh);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(0, 1fr);
     grid-template-areas: 
     "student breaking css"
     "boy politics politics"
@@ -13,11 +13,18 @@
     ;
     grid-gap: 5px;
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    }
+h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
 }
 #StudentLearnsHTML{
     grid-area: student;
-    border: 2px solid black;
     height: 2cm;
+    border: 2px solid black;
 }
 #BREAKING:Puppies are Addorable{
     grid-area: breaking;
