@@ -1,35 +1,24 @@
 .container{
     display: grid;
-    height: repeat(50vh);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(0, 1fr);
+    height: 100vh;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: 
     "student breaking css"
-    "boy politics politics"
-    "boy technology technology"
-    "boy locals locals"
-    "boy opinion opinion"
-    "boy sports sports"
+    "boy content content"
     ;
-    grid-gap: 5px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
     }
 h1{
     text-align: center;
     font-family:'Times New Roman', Times, serif;
 }
-#StudentLearnsHTML{
+#StudentlearnsHTML{
     grid-area: student;
-    height: 2cm;
-    border: 2px solid black;
+    border: 1px solid black;
 }
-#BREAKING:Puppies are Addorable{
+#BREAKINGPuppiesAreAddorable{
     grid-area: breaking;
-    border: 2px solid black;
-    height: 2cm;
+    border: 1px solid black;
 }
 img{
     width:300px;
@@ -37,31 +26,38 @@ img{
 }
 #CSSIsApparentlyAThing{
     grid-area: css;
-    border: 2px solid black;
-    height: 2cm;
+    border: 1px solid black;
 }
 #BoyLikeTurtle{
     grid-area: boy;
-    border: 2px solid black;
-    height: 2cm;
+    border: 1px solid black;
+}
+.content{
+    grid-area:content;
+    border: 1px solid; 
 }
 #Politics{
     background-color: rgb(201, 195, 110);
     grid-area: politics;
+    height: 20%;
 }
 #Technology{
     background-color: lightskyblue;
      grid-area: technology;
+     height: 20%;
 }
 #Locals{
     background-color: dodgerblue;
     grid-area: locals;
+    height: 20%;
 }
 #Opinion{
     background-color:lightgreen;
     grid-area: opinion;
+    height: 20%;
 }
 #Sports{
     background-color:#7a09af;
     grid-area: sports;
+    height: 20%;
 }
